@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+.container{
+    display: flex;
+    width: 600 px;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 1px 0px 20px 2px rgba(0, 0, 0.4);
+
+}
+.left{
+    color: #fff;
+    padding: 20px;
+    width: 40%;
+    border-radius: 20px;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+.right{
+    width: 50%;
+    padding: 20px;
+
+}
+.left .p{
+    text-align: center;
+    font-size: 18px;
+}
+.left h1{
+    text-align: center;
+}
+.left h2{
+    text-align: center;
+}
+.left h4{
+    text-align: center;
+}
+.score-left{
+    padding: 50px;
+    width: 74px;
+    height: 74px;
+    border-radius: 100%;
+    box-shadow: inset 1px 1px 12px 0px hsla(256, 72%, 46%, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.yourscore{
+    color: #fff;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.score-con{
+    display: flex;
+
+}
+.score{
+    display: flex;
+    justify-content: space-between;
+    background-color: hsla(0, 100%, 67%, 0.1);
+    color: hsl(0, 100%, 67%);
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 15px;
+}
+.grey{
+    color: rgba(173, 171, 171, 0.992);
+}
+.score-memory{
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+.score-verbal{
+    color: hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+.score-visual{
+    color: hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 45%, 0.1);
+
+}
+.black-text{
+    color: #222;
+    font-weight: bold;
+}
+button{
+    margin-top: 30px;
+    padding: 15px 30px;
+    border: none;
+    color: white;
+    outline: none;
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 20px;
+    width: 100%;
+}
+@media (max-width:760px){
+    .left{
+        width: 100%;
+        border-radius: 0px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .right{
+        padding: 0;
+        width: 80%;
+    }
+    .left-text{
+        padding: 0;
+        width: 80%;
+    }
+    .container{
+        width: 100%;
+        flex-direction: column;
+        border-radius: 0px;
+        overflow: hidden;
+        padding: 0;
+    }
+    
+}
